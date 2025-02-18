@@ -33,10 +33,10 @@
 
 "use client";
 import { useSession, signOut } from "next-auth/react";
-import Footer from '@/components/landing/Footer'; // Import Footer
-import Hero from '@/components/landing/Hero'; // Import Hero
-import Navbar from '@/components/landing/NavBar'; // Import Navbar
-import LandingPage from "@/components/landing/LandingPage";
+import Footer from '@/app/(auth)/landing/Footer'; // Import Footer
+import Hero from '@/app/(auth)/landing/Hero'; // Import Hero
+import Navbar from '@/app/(auth)/landing/NavBar'; // Import Navbar
+import LandingPage from "@/app/(auth)/landing/LandingPage";
 export default function Dashboard() {
   const { data: session } = useSession();
 

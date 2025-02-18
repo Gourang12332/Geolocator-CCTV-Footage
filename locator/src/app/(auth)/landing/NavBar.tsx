@@ -1,11 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { Button } from "../ui/button";
+import { Button } from "@/components/ui/button";
 
 const navigationOptions = [
   { title: "Home", link: "/" },
-  { title: "Track", link: "#red" },
+  { title: "Track", link: "/Trackings" },
   { title: "About Us", link: "#blue" },
   { title: "Contact", link: "/" },
 ];
@@ -32,7 +32,7 @@ function LogInSignUp() {
 // NavBar Component
 export default function NavBar({ isLoggedIn }: NavBarProps) {
   return (
-    <nav className="shadow-md bg-gray-50">
+    <nav className="shadow-md bg-black-50">
       <div className="container mx-auto flex h-16 items-center px-4 md:px-8">
         {/* Logo Section */}
         <div className="flex-shrink-0 text-3xl font-bold text-blue-500">

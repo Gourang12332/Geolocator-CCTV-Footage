@@ -73,7 +73,7 @@ export default function LandingPage() {
   
       try {
         // Replace with your actual API URL
-        const response = await fetch('https://reqres.in/api/upload', {
+        const response = await fetch('https://f025-34-147-109-215.ngrok-free.app/predict', {
           method: 'POST',
           body: formData,
         });
