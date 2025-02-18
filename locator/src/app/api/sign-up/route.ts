@@ -37,7 +37,7 @@ export async function POST(request:Request) {
          await newUser.save()
        
        return Response.json({
-        success : false,
+        success : true,
         message : "User registered successfully"
       },{status : 200})
 
